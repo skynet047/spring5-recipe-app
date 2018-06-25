@@ -205,6 +205,11 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         tacosRecipe.addIngredient(new Ingredient("Roughly chopped cilantro", new BigDecimal(4), eachUom));
         tacosRecipe.addIngredient(new Ingredient("cup sour cream thinned with 1/4 cup milk", new BigDecimal(4), cupsUom));
         tacosRecipe.addIngredient(new Ingredient("lime, cut into wedges", new BigDecimal(4), eachUom));
+        tacosRecipe.getProperties().add(new RecipeAdditionalProperty("one"));
+        tacosRecipe.getProperties().add(new RecipeAdditionalProperty("two"));
+        tacosRecipe.getProperties().add(new RecipeAdditionalProperty("3"));
+        tacosRecipe.getProperties().add(new RecipeAdditionalProperty("4"));
+        tacosRecipe.getProperties().add(new RecipeAdditionalProperty("5"));
 
         tacosRecipe.getCategories().add(americanCategory);
         tacosRecipe.getCategories().add(mexicanCategory);
